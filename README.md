@@ -27,6 +27,8 @@ On the other hand, **Thrush** tries to be a high-level language, with little mem
 
 - An asynchronous motor for functions.
 
-- The ability to make system calls from the language.
+- Implement partial object-oriented programming to the extent possible.
+
+- Focus the language more on the functional paradigm.
 
 - And the rest of the capabilities of a current modern language such as V lang, Rust, Zig, but without being directly a language for systems development, more like Kotlin with syntax not so much like JVM languages. And it emits binaries by default.
