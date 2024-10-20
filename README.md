@@ -32,3 +32,9 @@ On the other hand, **Thrush** tries to be a high-level language, with little mem
 - Focus the language more on the functional paradigm.
 
 - And the rest of the capabilities of a current modern language such as V lang, Rust, Zig, but without being directly a language for systems development, more like Kotlin with syntax not so much like JVM languages. And it emits binaries by default.
+
+<h1 align="center">The Currently Tecniques</h1>
+
+<h3 align="center">The String Infraestructure</h1>
+
+  
