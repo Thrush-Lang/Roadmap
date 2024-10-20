@@ -52,7 +52,8 @@ fn main() {
       %heap = call ptr @malloc(i64 SIZE_OF_STRING)
       store ptr %heap, ptr %stack, align 8
 
-  */  
+  */
+
 }
 ```
 
