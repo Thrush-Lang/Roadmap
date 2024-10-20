@@ -9,3 +9,7 @@
 <h1 align="center">The Core</h1>
 
 First let's start with Thrush compiling to **LLVM Intermediate Representation** by default.
+
+<p align="center">
+  <img src= "https://github.com/Thrush-Lang/Roadmap/blob/master/assets/llvm.png" alt= "llvm" style= "width: 1hv; height: 1hv;"> </img>
+</p>
