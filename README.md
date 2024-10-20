@@ -8,4 +8,4 @@
 
 <h1 align="center">The Core 💎</h1>
 
-First let's start with Thrush compiling to **LLVM IR** by default.
+First let's start with Thrush compiling to **LLVM Intermediate Representation** by default.
