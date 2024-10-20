@@ -17,4 +17,16 @@
 **Thrush** has full access to the C ABI by default, all extra implementations that are not in C are done directly in the IR, without using the C++ standard library for example, to know concisely what is happening and why it does not work. This also allows us to create our own system directly in IR, instead of using other language libraries. 
 On the other hand, **Thrush** tries to be a high-level language, with little memory management by the user. In populist terms a Rust but it is not a concise systems language.
 
-<h1 align="center">The Tecniques</h1>
+<h1 align="center">The Roadmap</h1>
+
+- Implement error handling similar to Rust or Try Catch in other languages. 
+
+- Implement the definition of errors as in Rust.
+
+- Try to have a standard library that offers everything an average developer needs. 
+
+- An asynchronous motor for functions.
+
+- The ability to make system calls from the language.
+
+- And the rest of the capabilities of a current modern language such as V lang, Rust, Zig, but without being directly a language for systems development, more like Kotlin with syntax not so much like JVM languages. And it emits binaries by default.
