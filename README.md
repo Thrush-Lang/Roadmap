@@ -37,7 +37,7 @@ On the other hand, **Thrush** tries to be a high-level language, with little mem
 
 <h3 align="center">The String Infraestructure</h1>
 
-Following Rust's almost philosophy of assigning everything to the stack, Thrust with strings does the same as C with its fixed arrays but Thrush transforms a string into an array of ascii characters that resizes it at runtime if necessary, for example concatenating strings What Thrush does is take the strings that are going to be concatenated, obtains their size, and calculates how much it should allocate in memory, allocates in the heap memory that part that it needs to then move it to the stack and build the completely already assigned string in the stack.
+Following Rust's almost philosophy of assigning everything to the stack, Thrush with strings does the same as C with its fixed arrays but Thrush transforms a string into an array of ascii characters that resizes it at runtime if necessary, for example concatenating strings What Thrush does is take the strings that are going to be concatenated, obtains their size, and calculates how much it should allocate in memory, allocates in the heap memory that part that it needs to then move it to the stack and build the completely already assigned string in the stack.
 
 ```
 fn main() {
