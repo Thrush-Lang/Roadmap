@@ -53,7 +53,7 @@ fn main() {
       store ptr %heap, ptr %stack, align 8
 
   */
-  // The size of the string is calculated by the bit width of the character * Number of characters.
+  // The size of the string is calculated by the bit width of the character * number of characters.
 
 }
 ```
