@@ -37,10 +37,30 @@ On the other hand, **Thrush** tries to be a high-level language, with little mem
 
 <h3 align="center">The String Infraestructure</h1>
 
-Following Rust's almost philosophy of assigning everything to the stack, Thrush with strings does the same as C with its fixed arrays but Thrush transforms a string into an array of ascii characters that resizes it at runtime if necessary, for example concatenating strings What Thrush does is take the strings that are going to be concatenated, obtains their size, and calculates how much it should allocate in memory, allocates in the heap memory that part that it needs to then move it to the stack and build the completely already assigned string in the stack.
+The internal string infrastructure in Thrush, by default, uses the creation of a vector system full of ascii characters in the LLVM IR directly, to resolve string return in functions and create a memory-safe environment, as well as being much more dynamic, something equivalent to the string type in Rust, but not the &str type. Of course it allocates to the heap, which perhaps causes a little more slowdown in the program but is compensated by the capabilities and flexibility provided by this internal API.
 
 ```
-// Coming soon...
+fn main() {
+
+  var hello: string = "Hello!";
+  // ^^^^^^^^^^^^^^^^^^^^^^^^^
+  // string var = Vec<u8> assigned directly to heap
+
+}
 ```
+
+Of course this does not happen in all cases, since if it is not a variable or modification such as string concatenation, the compiler takes the string and transforms it into a constant assigned to the stack.
+
+```
+fn main() {
+
+  println("%s", "hello");
+  //      ^^^^  ^^^^^^^
+  // Equivalent to &str type in Rust, assigned to the stack automatically.
+
+}
+```
+
+
 
   
